@@ -70,7 +70,7 @@ zstyle ':omz:update' frequency 13
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ansible archlinux aws docker docker-compose extract gh helm sublime terraform vscode zsh-interactive-cd zsh-navigation-tools)
+plugins=(git ansible macos aws docker docker-compose extract gh helm sublime terraform vscode zsh-interactive-cd zsh-navigation-tools)
 
 source $ZSH/oh-my-zsh.sh
 
