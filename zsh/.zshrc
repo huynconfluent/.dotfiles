@@ -60,7 +60,7 @@ zstyle ':omz:update' frequency 13
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="%Y-%m-%d %I:%M:%S %p"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -70,7 +70,7 @@ zstyle ':omz:update' frequency 13
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ansible macos aws docker docker-compose extract gh helm sublime terraform vscode zsh-interactive-cd zsh-navigation-tools)
+plugins=(git ansible macos aws docker docker-compose extract gh helm sublime terraform vscode zsh-interactive-cd zsh-navigation-tools colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,3 +100,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt CORRECT_ALL
+
+# alises
+alias dmesg="dmesg -T"
+alias tree="tree -Csu"
+alias mkdir="mkdir -pv"
