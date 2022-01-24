@@ -6,6 +6,7 @@ set tabstop=4               " number of visual spaces per TAB
 set softtabstop=4           " number of spaces in tab when editing
 set expandtab               " tabs are spaces
 set smarttab                " Be smart when using tabs
+set smartindent             " Smart indent
 set number relativenumber   " show hybrid line numbers
 set showcmd                 " shown command in bottom bar
 set wildmenu                " visual autocomplete for command menu
@@ -24,6 +25,7 @@ set noswapfile              " don't use Vim's swap
 set ttyfast                 " Optimize for fast terminal connections
 set ruler                   " Show cursor position
 set foldcolumn=0
+set nowrap
 
 set laststatus=2
 set showmode
@@ -34,13 +36,17 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" set colorcolumn=80
+
+" Undo directory
+set undodir=~/.vim/undodir
+set undofile
+
 filetype on                 " Enable filetype detection
 filetype indent on          " load filetype-specific indent files
 
-if exists ("+title")
-    set title
-	set titleold=
-endif
+" Set leader key to space
+let mapleader=" "
 
 " Return to last edit position when opening files. *(You want this!)
 if has('viminfo')
@@ -64,3 +70,20 @@ endif
 
 " Set Toggles
 set pastetoggle=<F2>
+
+" Using plug-vim Plugin Manager
+call plug#begin('~/.vim/plugged')
+
+    Plug 'preservim/nerdtree'
+    Plug 'itchyny/lightline.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'frazrepo/vim-rainbow'
+
+call plug#end()
+
+" NerdTree Remaps
+nnoremap <leader>n :NERDTreeToggle<CR>
+
+" rainbow brackets
+let g:rainbow_active = 1
