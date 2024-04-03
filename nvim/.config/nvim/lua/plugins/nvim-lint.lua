@@ -12,7 +12,6 @@ return {
 			terraform = { "tflint" },
 			go = { "golangci-lint" },
 			yaml = { "yamllint" },
-			dockerfile = { "hadolint" },
 			sh = { "shellcheck" },
 			bash = { "shellcheck" },
 			zsh = { "shellcheck" },
