@@ -30,7 +30,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-zstyle ':omz:update' frequency 13
+zstyle ':omz:update' frequency 5
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -105,7 +105,7 @@ setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
-setopt CORRECT_ALL
+setopt CORRECT
 
 # alises
 alias dmesg="dmesg -T"
@@ -114,3 +114,4 @@ alias mkdir="mkdir -pv"
 alias openssl1="/usr/local/opt/openssl@1.1/bin/openssl"
 alias openssl="/usr/local/opt/openssl@3/bin/openssl"
 alias grep="/usr/local/opt/grep/libexec/gnubin/grep"
+alias vim="nvim"
