@@ -77,7 +77,7 @@ mouse = "Right"
 [window]
 opacity = 0.9
 # blur only works on macOS/KDE Wayland
-blur = true
+blur = false
 
 [window.dimensions]
 columns = 90
