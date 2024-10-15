@@ -115,3 +115,7 @@ alias openssl1="/usr/local/opt/openssl@1.1/bin/openssl"
 alias openssl="/usr/local/opt/openssl@3/bin/openssl"
 alias grep="/usr/local/opt/grep/libexec/gnubin/grep"
 alias vim="nvim"
+alias assume=". assume"
+
+# source cc-dotfiles
+source $HOME/.cc-dotfiles/caas.sh
