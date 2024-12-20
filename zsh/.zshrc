@@ -116,6 +116,7 @@ alias openssl="/usr/local/opt/openssl@3/bin/openssl"
 alias grep="/usr/local/opt/grep/libexec/gnubin/grep"
 alias vim="nvim"
 alias assume=". assume"
+alias docker-compose="docker compose"
 
 # source cc-dotfiles
 source $HOME/.cc-dotfiles/caas.sh
