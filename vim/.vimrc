@@ -79,6 +79,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'frazrepo/vim-rainbow'
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
