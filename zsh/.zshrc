@@ -118,5 +118,9 @@ alias vim="nvim"
 alias assume=". assume"
 alias docker-compose="docker compose"
 
+# bindkeys
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
+
 # source cc-dotfiles
 source $HOME/.cc-dotfiles/caas.sh
