@@ -42,7 +42,6 @@ return {
 					"ansible-lint",
 					"tflint",
 					"golangci-lint",
-					"hadolint",
 					"shellcheck",
 					"htmlhint",
 					"stylelint",
