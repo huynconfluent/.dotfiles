@@ -1,7 +1,7 @@
 return {
 	{
 		"saghen/blink.cmp",
-		version = "v0.*",
+		version = "v1.*",
 
 		---@module 'blink.cmp'
 		---@type blink.cmp.Config
@@ -17,7 +17,7 @@ return {
 			completion = {
 				trigger = { show_on_keyword = true },
 				keyword = { range = "full" },
-				list = { selection = "auto_insert" },
+				list = { selection = { preselect = true, auto_insert = true } },
 				documentation = { auto_show = true, auto_show_delay_ms = 500, treesitter_highlighting = true },
 				menu = {
 					enabled = true,
