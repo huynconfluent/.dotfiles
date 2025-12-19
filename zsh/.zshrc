@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:$HOME/bin:/usr/local/opt/grep/libexec/gnubin
+export PATH=$PATH:$HOME/bin:/usr/local/opt/grep/libexec/gnubin:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -112,11 +112,13 @@ alias dmesg="dmesg -T"
 alias tree="tree -Csu"
 alias mkdir="mkdir -pv"
 alias openssl1="/usr/local/opt/openssl@1.1/bin/openssl"
-alias openssl="/usr/local/opt/openssl@3/bin/openssl"
-alias grep="/usr/local/opt/grep/libexec/gnubin/grep"
+#alias openssl="/usr/local/opt/openssl@3/bin/openssl"
+alias grep="/opt/homebrew/opt/grep/libexec/gnubin/grep"
 alias vim="nvim"
 alias assume=". assume"
 alias docker-compose="docker compose"
+alias f="fzf --preview='cat {}'"
+alias reload="source ~/.zshrc"
 
 # bindkeys
 bindkey "^[[A" history-search-backward
