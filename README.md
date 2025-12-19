@@ -40,6 +40,9 @@ cd ~
 ./dotfiles/remove
 ```
 
+## Oh-My-ZSH
+
+One of the plugins
 ## Tmux Installation
 
 Guidance on configuring Tmux. Plugin Manager here is [TPM](https://github.com/tmux-plugins/tpm)
