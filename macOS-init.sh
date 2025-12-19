@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # check for homebrew, then install
 if [[ ! -x "/usr/local/bin/brew" ]]; then
     echo "Installing homebrew..."
