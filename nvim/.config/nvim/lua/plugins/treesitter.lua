@@ -41,5 +41,5 @@ return {
 	branch = "main",
 	lazy = false,
 	build = ":TSUpdate",
-	config = config,
+	config = configs,
 }
