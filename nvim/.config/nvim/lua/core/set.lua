@@ -33,3 +33,11 @@ vim.opt.errorbells = false
 vim.opt.backspace = "indent,eol,start"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.iskeyword:append("-")
+vim.opt.cursorline = true
+vim.opt.pumheight = 10
+vim.opt.completeopt = "menuone,noselect"
+--netrw
+vim.g.netrw_keepdir = 0
+vim.g.netrw_winsize = 30
+vim.g.netrw_localcopydircmd = "cp -r"
