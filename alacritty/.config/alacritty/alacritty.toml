@@ -68,6 +68,16 @@ action = "DecreaseFontSize"
 key = "Minus"
 mods = "Control"
 
+[[keyboard.bindings]]
+chars = "\u001bb"
+key = "Left"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001bf"
+key = "Right"
+mods = "Control"
+
 [[mouse.bindings]]
 action = "Copy"
 mouse = "Middle"
