@@ -7,6 +7,12 @@ else
     echo "Homebrew installed...skipping!"
 fi
 
+# ensure repos are installed
+if [ -e "$(which brew)" ]; then
+    brew tap chipmk/tap
+    brew tap nikitaboko/tap
+fi
+
 # install default apps
 while read app; do
     brew install "$app"
