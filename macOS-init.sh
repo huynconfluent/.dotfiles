@@ -1,19 +1,22 @@
 #!/bin/zsh
+
 # check for homebrew, then install
-if [[ ! -x "/usr/local/bin/brew" ]]; then
-    echo "Installing homebrew..."
+if [ ! -e "$(which brew)" ]; then
+    printf "Homebrew not found, installing...\n"
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
-    echo "Homebrew installed...skipping!"
+    printf "Homebrew found, skipping install!\n"
 fi
 
-# ensure repos are installed
+# install via brew
 if [ -e "$(which brew)" ]; then
-    brew tap chipmk/tap
-    brew tap nikitaboko/tap
+    if [ -f "./.Brewfile" ]; then
+        brew bundle install --file=./.Brewfile
+    else
+        printf "Brewfile not found, exiting...\n"
+        exit 1
+    fi
+else
+    printf "Brew command not found, exiting...\n"
+    exit 1
 fi
-
-# install default apps
-while read app; do
-    brew install "$app"
-done < "$HOME/.dotfiles/brew_leaves.txt"
