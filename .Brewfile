@@ -1,5 +1,5 @@
 tap "chipmk/tap"
-tap "nikitabobko/tap"
+tap "nikitabobko/tap", trusted: true
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Official Amazon AWS command-line interface
@@ -60,8 +60,6 @@ brew "ripgrep"
 brew "skopeo"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -77,7 +75,7 @@ brew "zoxide"
 # Connect directly to Docker-for-Mac containers via IP address 🐳 💻
 brew "chipmk/tap/docker-mac-net-connect"
 # AeroSpace is an i3-like tiling window manager for macOS
-cask "nikitabobko/tap/aerospace"
+cask "nikitabobko/tap/aerospace", trusted: true
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
 cask "font-hack-nerd-font"
@@ -88,3 +86,7 @@ cask "gcloud-cli"
 cask "multipass"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Obsidian
+cask "obsidian"
+# The Unarchiver
+cask "the-unarchiver"
