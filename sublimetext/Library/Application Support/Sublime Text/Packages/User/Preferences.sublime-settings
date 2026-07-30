@@ -1,0 +1,37 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+    "auto_complete": true,
+    "auto_complete_commit_on_tab": true,
+    "auto_complete_with_fields": true,
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    "default_encoding": "UTF-8",
+    "default_line_ending": "unix",
+    "detect_indentation": false,
+    "draw_centered": false,
+    "draw_white_space": "all",
+    "enable_hexadecimal_encoding": false,
+    "extensions":
+    [
+        "md",
+        "mdown",
+        "mdwn",
+        "mmd"
+    ],
+    "font_face": "menlo",
+    "font_size": 15,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
+    "shift_tab_unindent": false,
+    "theme": "Afterglow-orange.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "ignored_packages":
+    [
+        "Vintage",
+    ],
+    "index_files": false,
+}
