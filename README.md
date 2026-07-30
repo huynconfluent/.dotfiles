@@ -42,7 +42,22 @@ cd ~
 
 ## Oh-My-ZSH
 
-One of the plugins
+Install manually via [https://ohmyz.sh/](https://ohmyz.sh/)
+
+```
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+```
+
+### Oh-My-ZSH Plugins
+
+- [ZSH-Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+
+## Sublime Text
+
+Install manually via [https://www.sublimetext.com/download](https://www.sublimetext.com/download)
+
 ## Tmux Installation
 
 Guidance on configuring Tmux. Plugin Manager here is [TPM](https://github.com/tmux-plugins/tpm)
