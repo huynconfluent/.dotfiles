@@ -90,3 +90,5 @@ cask "raycast"
 cask "obsidian"
 # The Unarchiver
 cask "the-unarchiver"
+# Kubectl Krew
+cask "krew"
